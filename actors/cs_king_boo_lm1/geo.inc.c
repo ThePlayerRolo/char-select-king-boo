@@ -170,7 +170,6 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt2_Cap_Stat
 										GEO_ASM(1, geo_mario_rotate_wing_cap_wings),
 										GEO_ROTATION_NODE(LAYER_FORCE, 0, 0, 0),
 										GEO_OPEN_NODE(),
-											GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Metal_Toad_Switch_Option_Left_Wing_DL_mesh_layer_4),
 										GEO_CLOSE_NODE(),
 									GEO_CLOSE_NODE(),
 									GEO_TRANSLATE_ROTATE(LAYER_FORCE, 138, -117, -132, 15, -33, -133),
@@ -305,7 +304,6 @@ const GeoLayout cs_king_boo_lm1_Metal_Toad[] = {
 												GEO_ASM(1, geo_mario_rotate_wing_cap_wings),
 												GEO_ROTATION_NODE(LAYER_FORCE, 0, 0, 0),
 												GEO_OPEN_NODE(),
-													GEO_DISPLAY_LIST(LAYER_ALPHA, cs_king_boo_lm1_Metal_Toad_Switch_Option_Left_Wing_DL_mesh_layer_4),
 												GEO_CLOSE_NODE(),
 											GEO_CLOSE_NODE(),
 											GEO_TRANSLATE_ROTATE(LAYER_FORCE, 138, -117, -132, 15, -33, -133),
@@ -455,6 +453,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Half_Closed_Eyes__SKIN__0),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Half_Closed_Eyes__SKIN__0),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -462,6 +461,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Closed_Eyes__SKIN__1),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Closed_Eyes__SKIN__1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -469,6 +469,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Left_Eyes__SKIN__2),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Left_Eyes__SKIN__2),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -476,6 +477,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Right_Eyes__SKIN__3),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Right_Eyes__SKIN__3),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -483,6 +485,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Up_Eyes__SKIN__4),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Up_Eyes__SKIN__4),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -490,6 +493,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Down_Eyes__SKIN__5),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Down_Eyes__SKIN__5),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -497,6 +501,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Dead_Eyes__SKIN__6),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Dead_Eyes__SKIN__6),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -533,6 +538,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1[] = {
 										GEO_NODE_START(),
 										GEO_OPEN_NODE(),
 											GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_1),
+											GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5),
 										GEO_CLOSE_NODE(),
 										GEO_BRANCH(1, cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_State_Switch_opt1),
 										GEO_BRANCH(1, cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt1_Eye_State_Switch_opt2),
@@ -648,6 +654,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Half_Closed_Eyes__SKIN__0),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Half_Closed_Eyes__SKIN__0),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -655,6 +662,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Closed_Eyes__SKIN__1),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Closed_Eyes__SKIN__1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -662,6 +670,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Left_Eyes__SKIN__2),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Left_Eyes__SKIN__2),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -669,6 +678,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Right_Eyes__SKIN__3),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Right_Eyes__SKIN__3),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -676,6 +686,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Up_Eyes__SKIN__4),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Up_Eyes__SKIN__4),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -683,6 +694,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Down_Eyes__SKIN__5),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Down_Eyes__SKIN__5),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -690,6 +702,7 @@ const GeoLayout cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_Stat
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, cs_king_boo_lm1_Head_DL_mesh_layer_1_mat_override_Dead_Eyes__SKIN__6),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5_mat_override_Dead_Eyes__SKIN__6),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -749,6 +762,7 @@ const GeoLayout cs_king_boo_lm1_geo[] = {
 																GEO_NODE_START(),
 																GEO_OPEN_NODE(),
 																	GEO_DISPLAY_LIST(LAYER_OPAQUE, cs_king_boo_lm1_Head_DL_mesh_layer_1),
+																	GEO_DISPLAY_LIST(LAYER_TRANSPARENT, cs_king_boo_lm1_Head_DL_mesh_layer_5),
 																GEO_CLOSE_NODE(),
 																GEO_BRANCH(1, cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_State_Switch_opt1),
 																GEO_BRANCH(1, cs_king_boo_lm1_B_LoD_Switch_opt0_Cap_State_Switch_opt0_Eye_State_Switch_opt2),

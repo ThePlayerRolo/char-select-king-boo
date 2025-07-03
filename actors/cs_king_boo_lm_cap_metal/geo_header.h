@@ -1,0 +1,11 @@
+extern const GeoLayout cs_king_boo_lm_cap_metal_6_Cap_Anim_State_Switch_opt1[];
+extern const GeoLayout cs_king_boo_lm_cap_metal_geo[];
+extern Lights1 cs_king_boo_lm_cap_metal_Metal__METAL__lights;
+extern u8 cs_king_boo_lm_cap_metal_Metal_Shade_rgba16_rgba16[];
+extern u8 cs_king_boo_lm_cap_metal_Metal_Light_rgba16_rgba16[];
+extern Vtx cs_king_boo_lm_cap_metal_Metal_Cap_DL_mesh_layer_1_vtx_0[93];
+extern Gfx cs_king_boo_lm_cap_metal_Metal_Cap_DL_mesh_layer_1_tri_0[];
+extern Gfx mat_cs_king_boo_lm_cap_metal_Metal__METAL_[];
+extern Gfx mat_revert_cs_king_boo_lm_cap_metal_Metal__METAL_[];
+extern Gfx cs_king_boo_lm_cap_metal_Metal_Cap_DL_mesh_layer_1[];
+extern Gfx cs_king_boo_lm_cap_metal_material_revert_render_settings[];

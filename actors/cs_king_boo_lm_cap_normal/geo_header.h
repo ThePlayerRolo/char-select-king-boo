@@ -1,0 +1,15 @@
+extern const GeoLayout cs_king_boo_lm_cap_normal_6_Cap_Anim_State_Switch_opt1[];
+extern const GeoLayout cs_king_boo_lm_cap_normal_geo[];
+extern Lights1 cs_king_boo_lm_cap_normal_Gem_lights;
+extern Lights1 cs_king_boo_lm_cap_normal_Crown_Base_lights;
+extern u8 cs_king_boo_lm_cap_normal_King_Boo_Crown_Part_1_ia16[];
+extern Vtx cs_king_boo_lm_cap_normal_Cap_DL_mesh_layer_1_vtx_0[29];
+extern Gfx cs_king_boo_lm_cap_normal_Cap_DL_mesh_layer_1_tri_0[];
+extern Vtx cs_king_boo_lm_cap_normal_Cap_DL_mesh_layer_1_vtx_1[64];
+extern Gfx cs_king_boo_lm_cap_normal_Cap_DL_mesh_layer_1_tri_1[];
+extern Gfx mat_cs_king_boo_lm_cap_normal_Gem[];
+extern Gfx mat_revert_cs_king_boo_lm_cap_normal_Gem[];
+extern Gfx mat_cs_king_boo_lm_cap_normal_Crown_Base[];
+extern Gfx mat_revert_cs_king_boo_lm_cap_normal_Crown_Base[];
+extern Gfx cs_king_boo_lm_cap_normal_Cap_DL_mesh_layer_1[];
+extern Gfx cs_king_boo_lm_cap_normal_material_revert_render_settings[];
