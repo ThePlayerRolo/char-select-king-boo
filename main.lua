@@ -62,9 +62,10 @@ local CAPTABLE_KING_BOO_LM = {
 }
 
 local ANIM_KINGBOO_LM = {
-    [CHAR_ANIM_IDLE_HEAD_CENTER] = 'KING_BOO_LM_IDLE',
-    [CHAR_ANIM_IDLE_HEAD_LEFT]   = 'KING_BOO_LM_IDLE',
-    [CHAR_ANIM_IDLE_HEAD_RIGHT]  = 'KING_BOO_LM_IDLE',
+    [CHAR_ANIM_IDLE_HEAD_CENTER] = 'KING_BOO_IDLE_PROPER',
+    [CHAR_ANIM_IDLE_HEAD_LEFT]   = 'KING_BOO_IDLE_PROPER',
+    [CHAR_ANIM_IDLE_HEAD_RIGHT]  = 'KING_BOO_IDLE_PROPER',
+    [CHAR_ANIM_GENERAL_FALL]     = 'KING_BOO_LM_IDLE',
 }
 
 local PALETTE_CHAR_KING_BOO_LM1 = {
@@ -78,26 +79,23 @@ local PALETTE_CHAR_KING_BOO_LM1 = {
 	[EMBLEM] = "FF1000" --Gem
 }
 
--- All Located in "textures" folder
--- (Textures do not exist in template)
---[[
-local HEALTH_METER_CHAR = {
+
+local HEALTH_METER_KING_BOO_LM1 = {
     label = {
-        left = get_texture_info("healthleft"),
-        right = get_texture_info("healthright"),
+        left = get_texture_info("KingBooHealthIconLeft"),
+        right = get_texture_info("KingBooHealthIconRight"),
     },
     pie = {
-        [1] = get_texture_info("Pie1"),
-        [2] = get_texture_info("Pie2"),
-        [3] = get_texture_info("Pie3"),
-        [4] = get_texture_info("Pie4"),
-        [5] = get_texture_info("Pie5"),
-        [6] = get_texture_info("Pie6"),
-        [7] = get_texture_info("Pie7"),
-        [8] = get_texture_info("Pie8"),
+        [1] = get_texture_info("KingBooMeter1"),
+        [2] = get_texture_info("KingBooMeter2"),
+        [3] = get_texture_info("KingBooMeter3"),
+        [4] = get_texture_info("KingBooMeter4"),
+        [5] = get_texture_info("KingBooMeter5"),
+        [6] = get_texture_info("KingBooMeter6"),
+        [7] = get_texture_info("KingBooMeter7"),
+        [8] = get_texture_info("KingBooMeterFull"),
     }
 }
-]]
 
 local CSloaded = false
 local function on_character_select_load()
@@ -124,10 +122,13 @@ local function on_character_select_load()
 
     -- Adds a health meter to your character
     -- (Textures do not exist in template)
-    -- _G.charSelect.character_add_health_meter(CT_KING_BOO_LM, HEALTH_METER_CHAR)
+    _G.charSelect.character_add_health_meter(CT_KING_BOO_LM, HEALTH_METER_KING_BOO_LM1)
     _G.charSelect.character_add_animations(E_MODEL_KING_BOO_LM, ANIM_KINGBOO_LM);
 
     _G.charSelect.character_add_voice(E_MODEL_KING_BOO_LM, VOICETABLE_KING_BOO_LM)
+
+    _G.charSelect.character_hook_moveset(CT_KING_BOO_LM, HOOK_MARIO_UPDATE, king_boo_update)
+
 
     _G.charSelect.credit_add(TEXT_MOD_NAME, "You", "Pack")
 
