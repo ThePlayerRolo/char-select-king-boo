@@ -8,6 +8,11 @@ if not _G.charSelectExists then
     return 0
 end
 
+if not _G.BooMovesetAPI then
+    djui_popup_create("\\#ffffdc\\\n"..TEXT_MOD_NAME.."\nRequires the Boo Moveset API Mod\nto use as a Library!\n\nPlease turn on the Boo Moveset API Mod\nand Restart the Room!", 6)
+    return 0
+end
+
 local E_MODEL_KING_BOO_LM =      smlua_model_util_get_id("cs_king_boo_lm1_geo")      -- Located in "actors"
 -- local E_MODEL_KING_BOO_LM_STAR = smlua_model_util_get_id("custom_model_star_geo") -- Located in "actors"
 
@@ -127,10 +132,12 @@ local function on_character_select_load()
 
     _G.charSelect.character_add_voice(E_MODEL_KING_BOO_LM, VOICETABLE_KING_BOO_LM)
 
-    _G.charSelect.character_hook_moveset(CT_KING_BOO_LM, HOOK_MARIO_UPDATE, king_boo_update)
-
 
     _G.charSelect.credit_add(TEXT_MOD_NAME, "You", "Pack")
+    if _G.BooMovesetAPI then
+        local KING_BOO_FLAGS = _G.BooMovesetAPI.gBooMovesetFlags.FLAG_FLOAT_ENABLED | _G.BooMovesetAPI.gBooMovesetFlags.FLAG_EDIT_IDLE
+        _G.BooMovesetAPI.character_set_boo_flags(E_MODEL_KING_BOO_LM, KING_BOO_FLAGS)
+    end
 
     CSloaded = true
 end
