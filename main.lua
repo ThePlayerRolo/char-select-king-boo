@@ -136,7 +136,12 @@ local function on_character_select_load()
     _G.charSelect.credit_add(TEXT_MOD_NAME, "You", "Pack")
     if _G.BooMovesetAPI then
         local KING_BOO_FLAGS = _G.BooMovesetAPI.gBooMovesetFlags.FLAG_FLOAT_ENABLED | _G.BooMovesetAPI.gBooMovesetFlags.FLAG_EDIT_IDLE
+        local KING_BOO_FLOAT_DATA = {
+            FLOAT_SOUNDEFFECT = audio_sample_load("LaughLong2.ogg"),
+            MAX_FLOATS = 1,
+        }
         _G.BooMovesetAPI.character_set_boo_flags(E_MODEL_KING_BOO_LM, KING_BOO_FLAGS)
+        _G.BooMovesetAPI.character_set_boo_float_data(E_MODEL_KING_BOO_LM, KING_BOO_FLOAT_DATA)
     end
 
     CSloaded = true
